@@ -17,39 +17,12 @@
 // |  K  |  .  |  O  |  ,  |  Y  |   |  V  |  G   |  C  |  L  |  ß  |  XXX  |  XXX |
 // |  H  |  A  |  E  |  I  |  U  |   |  D  |  T   |  R  |  N  |  S  |  XXX  |  XXX |
 // |  X  |  Q  |  Ä  |  Ü  |  Ö  |   |  B  |  P   |  W  |  M  |  J  |  XXX  |  XXX |
-//                    | GUI | LWR | BSPC |   | SPC | RSE  | ALT |
+//                    | GUI | XXX | BSPC |   | SPC | XXX  | ALT |
                         bindings = <
    &kp K &kp DOT &kp O &kp COMMA &kp T   &kp V &kp G  &kp C   &kp L   &kp Minus   &trans   &trans
    &kp H &kp A &kp E &kp F &kp G   &kp D &kp T  &kp R     &kp N   &kp S   &trans   &trans
    &kp X &kp Q &kp SQT &kp LBKT &kp SEMI   &kp B &kp P  &kp W &kp M &kp J  &trans  &trans
-                  &kp LGUI &mo 1 &kp BSPC   &kp SPACE &mo 2 &kp RALT
-                        >;
-                };
-                lower_layer {
-// -----------------------------------------------------------------------------------------
-// |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |  XXX  |  XXX |
-// | BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |  XXX  |  XXX |
-// |     |     |     |     |     |   |     |     |     |     |     |  XXX  |  XXX |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
-                        bindings = <
-   &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0  &trans   &trans
-   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans  &trans   &trans
-   &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans  &trans   &trans
-                          	        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
-                        >;
-                };
-
-                raise_layer {
-// -----------------------------------------------------------------------------------------
-// |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |  XXX  |  XXX |
-// |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  XXX  |  XXX |
-// |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  XXX  |  XXX |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
-                        bindings = <
-   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &trans  &trans   &trans
-   &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT  &trans  &trans   &trans
-   &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC  &trans  &trans   &trans
-                    	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+                  &kp LGUI &trans &kp BSPC   &kp SPACE &trans &kp RALT
                         >;
                 };
         };
