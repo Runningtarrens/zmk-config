@@ -65,33 +65,19 @@
             key-positions = <17 18>;
             bindings = <&kp ENTER>;
         };
-    };
-};
-
-/ {
-    combos {
-        compatible = "zmk,combos";
+ 
         combo_F {
             timeout-ms = <50>;
             key-positions = <19 20>;
             bindings = <&kp F>;
         };
-    };
-};
-
-/ {
-    combos {
-        compatible = "zmk,combos";
+        
         combo_Z {
             timeout-ms = <80>;
             key-positions = <9 10;
             bindings = <&kp Z>;
+            
         };
-    };
-};
-/ {
-    combos {
-        compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <50>;
             key-positions = <0 1>;
