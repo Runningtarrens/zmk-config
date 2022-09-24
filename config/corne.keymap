@@ -14,9 +14,9 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  K  |  .  |  O  |  ,  |  Y  |  V  |   |   G   |  C  |  L  |  ß  |  XXX  |  XXX |
-// |  H  |  A  |  E  |  I  |  U  |  D  |   |   T   |  R  |  N  |  S  |  XXX  |  XXX |
-// |  X  |  Q  |  Ä  |  Ü  |  Ö  |  B  |   |   P   |  W  |  M  |  J  |  XXX  |  XXX |
+// |  K  |  .  |  O  |  ,  |  Y  |  V  |   |  G  |  C  |  L  |  ß  |  XXX  |  XXX |
+// |  H  |  A  |  E  |  I  |  U  |  D  |   |  T  |  R  |  N  |  S  |  XXX  |  XXX |
+// |  X  |  Q  |  Ä  |  Ü  |  Ö  |  B  |   |  P  |  W  |  M  |  J  |  XXX  |  XXX |
 //                  | GUI | XXX | BSPC |   | SPC | XXX  | ALT |
                         bindings = <
    &kp K &kp DOT &kp O &kp COMMA &kp T   &kp V &kp G  &kp C   &kp L   &kp Minus   &trans   &trans
