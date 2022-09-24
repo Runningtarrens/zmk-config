@@ -19,7 +19,7 @@
 // |  XXX |  X  |  Q  |  Ä  |  Ü  |  Ö  |  B  |   |  P  |  W  |  M  |  J  |  XXX  |
 //                  | GUI | XXX | BSPC |   | SPC | XXX  | ALT |
                         bindings = <
-    &trans &kp K &kp DOT &kp O    &kp COMMA &kp T    &kp V       &kp G  &kp C  &kp L   &kp MINUS  &trans 
+    &trans &kp K &kp DOT &kp O    &kp COMMA &kp Y    &kp V       &kp G  &kp C  &kp L   &kp MINUS  &trans 
     &trans &kp H &kp A   &kp E    &kp F     &kp G    &kp D       &kp T  &kp R  &kp N   &kp S      &trans   
     &trans &kp X &kp Q   &kp SQT  &kp LBKT  &kp SEMI &kp B       &kp P  &kp W  &kp M   &kp J      &trans   
                   &kp LGUI &trans &kp BSPC               &kp SPACE &trans &kp RALT
@@ -53,4 +53,49 @@
                         >;
                 };
         };
+};
+
+
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_ent {
+            timeout-ms = <50>;
+            key-positions = <17 18>;
+            bindings = <&kp ENTER>;
+        };
+    };
+};
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_F {
+            timeout-ms = <50>;
+            key-positions = <19 20>;
+            bindings = <&kp F>;
+        };
+    };
+};
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_Z {
+            timeout-ms = <80>;
+            key-positions = <9 10;
+            bindings = <&kp Z>;
+        };
+    };
+};
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>;
+        };
+    };
 };
