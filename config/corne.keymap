@@ -9,8 +9,14 @@
 #include <dt-bindings/zmk/bt.h>
 
 
+#define DEFAULT 0
+#define ZAHLEN  1
+
+
+
+
 &mt {
-    tapping-term-ms = <90>;
+    tapping-term-ms = <130>;
 };
 
 
@@ -23,16 +29,16 @@
 // |     |  K  |  .  |  O  |  ,  |  Z  |   |  V  |  G  |  C  |  L  |  ß  |     |
 // |     |  H  |  A  |  E  |  I  |  U  |   |  D  |  T  |  R  |  N  |  S  |     |
 // |     |  X  |  Q  |  Ä  |  Ü  |  Ö  |   |  B  |  P  |  W  |  M  |  J  |     |
-//                  | GUI | XXX | BSPC |   | SPC | MO(3)  | MO(2) |
+//                  | GUI | XXX | BSPC |   | SPC | MO(3)  | MO(0) |
                         bindings = <
    &trans &kp K         &kp DOT  &kp O     &kp COMMA &kp Z         &kp V      &kp G  &kp C  &kp L   &kp MINUS          &trans
    &trans &mt LSHIFT H  &kp A    &kp E     &kp I     &kp U         &kp D      &kp T  &kp R  &kp N   &kp S              &trans  
    &trans &kp X         &kp Q    &kp SQT   &kp LBKT  &kp SEMI      &kp B      &kp P  &kp W  &kp M   &mt RSHIFT J       &trans  
-                                 &kp LGUI  &trans    &kp BSPC      &kp SPACE  &mo 3  &mo ZAHLEN_ZEICHEN
+                                 &kp LGUI  &trans    &kp BSPC      &kp SPACE  &mo 3  &mo 0
                         >;
                 };
 		
-	        zahlen_zeichen {
+	        ZAHLEN {
 // -----------------------------------------------------------------------------------------
 // |     |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |     |
 // |     |  (  |  )  |  [  |  ]  |  "  |   |  =  |  %  |  up |  +  |  -  |     |
