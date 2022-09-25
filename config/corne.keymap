@@ -16,7 +16,7 @@
 
 
 &mt {
-    tapping-term-ms = <130>;
+    tapping-term-ms = <200>;
 };
 
 
@@ -34,7 +34,7 @@
    &trans &kp K         &kp DOT  &kp O     &kp COMMA &kp Z         &kp V      &kp G  &kp C  &kp L   &kp MINUS          &trans
    &trans &mt LSHIFT H  &kp A    &kp E     &kp I     &kp U         &kp D      &kp T  &kp R  &kp N   &kp S              &trans  
    &trans &kp X         &kp Q    &kp SQT   &kp LBKT  &kp SEMI      &kp B      &kp P  &kp W  &kp M   &mt RSHIFT J       &trans  
-                                 &kp LGUI  &trans    &kp BSPC      &kp SPACE  &mo 3  &mo 0
+                                 &kp LGUI  &trans    &kp BSPC      &kp SPACE  &mo 3  &mo 1
                         >;
                 };
 		
