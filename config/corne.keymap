@@ -9,16 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 
-/ {
-    combos {
-        compatible = "zmk,combos";
-        combo_ent {
-            timeout-ms = <70>;
-            key-positions = <20 21>;
-            bindings = <&kp ENTER>;
-        };
-    };
-};
+
 
 
 / {
@@ -33,7 +24,7 @@
 //                  | GUI | XXX | BSPC |   | SPC | XXX  | ALT |
                         bindings = <
     &trans &kp K &kp DOT &kp O    &kp COMMA &kp Z    &kp V       &kp G  &kp C  &kp L   &kp MINUS  &trans 
-    &trans &kp H &kp A   &kp E    &kp I     &kp G    &kp D       &kp T  &kp R  &kp N   &kp S      &trans   
+    &trans &kp H &kp A   &kp E    &kp I     &kp U    &kp D       &kp T  &kp R  &kp N   &kp S      &trans   
     &trans &kp X &kp Q   &kp SQT  &kp LBKT  &kp SEMI &kp B       &kp P  &kp W  &kp M   &kp J      &trans   
                   &kp LGUI &trans &kp BSPC               &kp SPACE &trans &kp RALT
                         >;
