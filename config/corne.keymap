@@ -18,7 +18,7 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  K  |  .  |  O  |  ,  |  Y  |   |  V  |  G  |  C  |  L  |  ß  |
+// |  K  |  .  |  O  |  ,  |  Z  |   |  V  |  G  |  C  |  L  |  ß  |
 // |  H  |  A  |  E  |  I  |  U  |   |  D  |  T  |  R  |  N  |  S  |
 // |  X  |  Q  |  Ä  |  Ü  |  Ö  |   |  B  |  P  |  W  |  M  |  J  |
 //            | GUI | XXX | BSPC |   | SPC | XXX  | ALT |
@@ -59,6 +59,30 @@
         };
 };
 
-
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_enter {
+            timeout-ms = <50>;
+            key-positions = <15 16>;
+            bindings = <&kp ENTER>;
+        };
+		combo_f {
+            timeout-ms = <50>;
+            key-positions = <18 19>;
+            bindings = <&kp F>;
+        };
+		combo_esc {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>;
+        };
+		combo_z {
+            timeout-ms = <50>;
+            key-positions = <8 9>;
+            bindings = <&kp Y>;
+        };
+    };
+};
 
 
