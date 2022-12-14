@@ -18,7 +18,7 @@
 #define OH5  6
 
 &mt {
-    tapping-term-ms = <200>;
+    tapping-term-ms = <150>;
 };
 
 
@@ -33,10 +33,10 @@
 // |     |  X  |  Q  |  Ä  |  Ü  |  Ö  |   |  B  |  P  |  W  |  M  |  J  |     |
 //                  | TAB | GUI | BSPC |   | SPC |TG(3)|MO(0)|
                         bindings = <
-   &trans &kp K                &kp DOT  &kp O     &kp COMMA &kp Z         &kp V      &kp G  &kp C  &kp L   &kp MINUS          &trans
-   &trans &kp H                &kp A    &kp E     &kp I     &kp U         &kp D      &kp T  &kp R  &kp N   &kp S              &trans  
-   &trans &mt LSHIFT X         &kp Q    &kp SQT   &kp LBKT  &kp SEMI      &kp B      &kp P  &kp W  &kp M   &mt RSHIFT J       &trans  
-                                        &kp TAB  &kp LGUI    &kp BSPC      &kp SPACE  &tog OH1  &mo 1
+   &trans &kp K                &kp DOT  &kp O     &kp COMMA &kp Z         &kp V        &kp G     &kp C  &kp L   &kp MINUS          &trans
+   &trans &kp H                &kp A    &kp E     &kp I     &kp U         &kp D        &kp T     &kp R  &kp N   &kp S              &trans  
+   &trans &mt LSHIFT X         &kp Q    &kp SQT   &kp LBKT  &kp SEMI      &kp B        &kp P     &kp W  &kp M   &mt RSHIFT J       &trans  
+                                        &kp TAB   &kp LGUI  &kp BSPC      &kp SPACE    &tog OH1  &mo 1
                         >;
                 };
 		
@@ -59,12 +59,12 @@
 // |     |  L  |  H  |  T  |  D  |  S  |  								 |  V  |  G  |  C  |  L  |  ß  |     |
 // |     |  A  |  N  |  E  |  I  |  R  |  								 |  D  |  T  |  R  |  N  |  S  |     |
 // |     |  M  |  G  |  O  |  C  |  U  |  								 |  B  |  P  |  W  |  M  |  J  |     |
-//                   |skSHI|SL(3)| SPC |  							         |  V  |  G  |  C  | SPC |MO(3)|trans|
+//                   |skSHI|SL(3)| SPC |  							         | SPC |MO(3)|trans|
                         bindings = <
    &trans	 &kp L    &kp H  &kp T       &kp D     &kp S      				   &kp V      &kp G  &kp C  &kp L   &kp MINUS          &trans
    &trans	 &kp A    &kp N  &kp E       &kp I     &kp R     				   &kp D      &kp T  &kp R  &kp N   &kp S              &trans  
-   &trans	 &mt M    &kp G  &kp O       &kp C     &kp U  				   &kp B      &kp P  &kp W  &kp M   &mt RSHIFT J       &trans  
-                             	 &sk LSHIFT  &sl 3     &kp SPC   				   &kp SPACE  &mo 3  &mo 1
+   &trans	 &kp M    &kp G  &kp O       &kp C     &kp U  				           &kp B      &kp P  &kp W  &kp M   &mt RSHIFT J       &trans  
+                             	 &sk LSHIFT  &sl 3     &kp SPC   				   &kp SPACE  &trans &trans
                         >;
                 };
 
@@ -73,12 +73,12 @@
 // |     |  Q  |  .  |  J  |  V  |  ß  |  								 |  V  |  G  |  C  |  L  |  ß  |     |
 // |     |  P  |  W  |  K  |  B  |  F  |  								 |  D  |  T  |  R  |  N  |  S  |     |
 // |     |  Z  |  ,  |  Ä  |  Ö  |  Ü  |  								 |  B  |  P  |  W  |  M  |  J  |     |
-//                   | SHI | SL 4| SPC |  								 |  V  |  G  |  C  | SPC |MO(3)|trans|
+//                   | SHI | SL 4| SPC |  								 | SPC |MO(3)|trans|
                         bindings = <
    &trans	 &kp Q  &kp DOT     &kp J     &kp V     &kp MINUS      				   &kp V      &kp G  &kp C  &kp L   &kp MINUS          &trans
    &trans	 &kp P  &kp W       &kp K     &kp B     &kp F    				   &kp D      &kp T  &kp R  &kp N   &kp S              &trans  
-   &trans	 &mt Y  &kp COMMA   &kp SQT   &kp LBKT  &kp SEMI  				   &kp B      &kp P  &kp W  &kp M   &mt RSHIFT J       &trans  
-                                    &sl 6     &sl 4     &kp SPC   				   &kp SPACE  &mo 3  &mo 1
+   &trans	 &kp Y  &kp COMMA   &kp SQT   &kp LBKT  &kp SEMI  				   &kp B      &kp P  &kp W  &kp M   &mt RSHIFT J       &trans  
+                                    &sl 6     &sl 4     &kp SPC   				   &kp SPACE  &trans &trans
                         >;
                 };
 
@@ -87,12 +87,12 @@
 // |    |  [  |  ]  |  +  |  -  |  *  |  								 |  V  |  G  |  C  |  L  |  ß  |     |
 // |    |  (  |  )  |  X  |  Y  |  /  |  								 |  D  |  T  |  R  |  N  |  S  |     |
 // |    |  #  |  "  |  %  |  !  |  =  |  								 |  B  |  P  |  W  |  M  |  J  |     |
-//                  |     | TG 5|  ?  |  								 |  V  |  G  |  C  | SPC |MO(3)|trans|
+//                  |     | TG 5|  ?  |  								 | SPC |MO(3)|trans|
                         bindings = <
    &trans	  &kp LBKT &kp RBKT  &kp LS(N1)  &kp RBKT    &kp STAR   			   &kp V      &kp G  &kp C  &kp L   &kp MINUS          &trans
    &trans 	  &kp LPAR &kp RPAR  &kp X       &kp Z       &kp SLASH				   &kp D      &kp T  &kp R  &kp N   &kp S              &trans  
    &trans 	  &kp NUHS &kp DQT   &kp PRCNT   &kp EXCL    &kp EQUAL				   &kp B      &kp P  &kp W  &kp M   &mt RSHIFT J       &trans  
-                                     &trans      &tog OH4    &kp LS(MINUS)   		           &kp SPACE  &mo 3  &mo 1
+                                     &trans      &tog OH4    &kp LS(MINUS)   		           &kp SPACE  &trans &trans
                         >;
                 };
 
@@ -101,12 +101,12 @@
 // |    |  .  |  ,  |  7  |  8  |  9  |  								 |  V  |  G  |  C  |  L  |  ß  |     |
 // |    |  +  |  -  |  4  |  5  |  6  |  								 |  D  |  T  |  R  |  N  |  S  |     |
 // |    |  *  |  /  |  1  |  2  |  3  |  								 |  B  |  P  |  W  |  M  |  J  |     |
-//                  |     |TG 5 |  0  |  								 |  V  |  G  |  C  | SPC |MO(3)|trans|
+//                  |     |TG 5 |  0  |  								 | SPC |MO(3)|trans|
                         bindings = <
    &trans	&kp DOT        &kp COMMA  &kp N7     &kp N8    &kp N9      				   &kp V      &kp G  &kp C  &kp L   &kp MINUS          &trans
    &trans 	&kp LS(N1)     &kp  RBKT  &kp N4     &kp N5    &kp N6     				   &kp D      &kp T  &kp R  &kp N   &kp S              &trans  
    &trans 	&kp STAR       &kp SLASH  &kp N1     &kp N2    &kp N3  				           &kp B      &kp P  &kp W  &kp M   &mt RSHIFT J       &trans  
-          	                          &trans     &tog OH4  &kp N0   				   &kp SPACE  &mo 3  &mo 1
+          	                          &trans     &tog OH4  &kp N0   				   &kp SPACE  &trans &trans
                         >;
                 };
 
@@ -116,18 +116,15 @@
 // |     |  Q  |  .  |  J  |  V  |  ß  |  								 |  V  |  G  |  C  |  L  |  ß  |     |
 // |     |  P  |  W  |  K  |  B  |  F  |  								 |  D  |  T  |  R  |  N  |  S  |     |
 // |     |  Z  |  ,  |  Ä  |  Ö  |  Ü  |  								 |  B  |  P  |  W  |  M  |  J  |     |
-//                   |     | SL 4| SPC |  								 |  V  |  G  |  C  | SPC |MO(3)|trans|
+//                   |     | SL 4| SPC |  								 | SPC |MO(3)|trans|
                         bindings = <
    &trans	 &kp LS(Q)  &kp LS(DOT)     &kp LS(J)     &kp LS(V)     &kp LS(MINUS)      		           &kp V      &kp G  &kp C  &kp L   &kp MINUS          &trans
    &trans	 &kp LS(P)  &kp LS(W)       &kp LS(K)     &kp LS(B)     &kp LS(F)    				   &kp D      &kp T  &kp R  &kp N   &kp S              &trans  
-   &trans	 &mt LS(Y)  &kp LS(COMMA)   &kp LS(SQT)   &kp LS(LBKT)  &kp LS(SEMI)  				   &kp B      &kp P  &kp W  &kp M   &mt RSHIFT J       &trans  
-                                            &trans        &sl 4         &kp SPC   		                   &kp SPACE  &mo 3  &mo 1
+   &trans	 &kp LS(Y)  &kp LS(COMMA)   &kp LS(SQT)   &kp LS(LBKT)  &kp LS(SEMI)  				   &kp B      &kp P  &kp W  &kp M   &mt RSHIFT J       &trans  
+                                            &trans        &sl 4         &kp SPC   		                   &kp SPACE  &trans &trans
                         >;
                 };
 
-
-
-               
         };
 };
 
